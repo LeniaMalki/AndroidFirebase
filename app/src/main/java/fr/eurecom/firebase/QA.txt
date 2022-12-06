@@ -1,0 +1,36 @@
+QUESTION: This while loop is missing the last contact, could you explain why? After fixing this, if
+you press again the button in your app, is something strange happening? If yes, explain how to fix
+it.
+- The main problem had to do with the fact that the moveToNext() functions starts on index 1 and
+not 0, hence skipping the first contact in the list. To solve this, the position of the cursor
+was set to -1 in order to start indexing from the first contact. The moveToFirst() is overwritten
+once moveToNext() is called.
+
+
+What are the advantages of Firebase and what is the business model behind it? (POV of the
+user and the developer)
+- Firebase allows access to databases from the client-side code in a secure and direct manner.
+Data is also updated in realtime which can enhance the user-experience and understanding of
+the data. Firebase have two billing plans: Spark and Blaze where Spark is the standard plan. The
+Blaze Plan is a uses a "pay as you go" model and it is based on usage. It also offers a bunch
+of features which are not available in the Spark plan. This include the ability to extend your
+project with Google Cloud. For testing purposes, the Spark plan is sufficient and lets the user try
+out the platform.
+
+Why Firebase is a relevant for mobile apps? Name 5 top benefits of using Firebase compared to
+other approaches?
+- Firebase provides backend as a service which makes it easier to program a mobile app in need
+of different components such as a database as the backend for these are provided my Firebase.
+Apps in need of user authentication can also easily make use of the authentication libraries
+offered by Firebase instead of setting it up yourself. Thirdly, with the use of Firebase, provides
+a Cloud storage mechanism which makes it possible for users to store data, in terms of videos
+and pictures, on the cloud. It is also worth considering using Firebase if you need to save time as
+is allows you to focus more on the mobile app development but it really depends on the specific
+requirements of your app.
+
+Identify 5 applications that could benefit from Firebase in particular for multi-device users?
+- Applications that require user authentication for accessing their accounts (possible to save devices)
+- Storage applications, possible to access same data from different devices
+- Apps that need to sync calendars, in the same line of accessing user data
+- Applications in need of sending notifications/messages to the user across multiple platforms
+- Applications which enables users to communicate with each other
